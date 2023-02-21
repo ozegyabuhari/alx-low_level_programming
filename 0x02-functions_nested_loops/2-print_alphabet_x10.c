@@ -1,22 +1,21 @@
 #include "main.h"
 
 /**
- * _islower - Check Main
- * @c: An input character
+ * print_alphabet_x10 - Check Main
  * Description: function uses _putchar function to print
  * alphabet in lowercase 10 times
- * Return: 1 if is lowercase or 0 if is uppercase
+ * Return: Nothing.
  */
-int _islower(int c)
+
+void print_alphabet_x10(void)
 {
 	char i;
-	int lower = 0;
+	int j;
 
-	for (i = 'a'; i <= 'z'; i++)
+	for (j = 0; j < 10; j++)
 	{
-		if (i == c)
-			lower = 1;
+		for (i = 'a'; i <= 'z'; i++)
+			_putchar(i);
+		_putchar('\n');
 	}
-
-	return (lower);
 }
