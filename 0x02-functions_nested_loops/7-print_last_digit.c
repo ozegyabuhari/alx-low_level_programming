@@ -5,13 +5,12 @@
  * Description: This function prints the last digit of a number
  * Return: last digit of number r
  */
-int print_last_digit(int n)
+int main(void)
 {
-	int ld = n % 10;
-
-	if (ld < 0)
-		ld *= -1;
-	_putchar(ld * '0');
-
-	return (0);
-}
+	int r;
+	print_last_digit(98);
+	print_last_digi(0);
+	r - print_last_digit(-1024);
+	_putchar('0' + r);
+	_putchar('\n');
+	retuen (0);
