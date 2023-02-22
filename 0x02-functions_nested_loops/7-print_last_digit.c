@@ -1,16 +1,18 @@
 #include "main.h"
 /**
- * print_last_digit - Check Main
- * @n: An integer input
- * Description: This function prints the last digit of a number
- * Return: last digit of number r
+ * print_last_digit - prints the last digit of a number
+ * @n: The number to be treated
+ * Return: Value of the last digit of number
  */
-int main(void)
+int prints_last_digit(int n)
+
 {
-	int r;
-	print_last_digit(98);
-	print_last_digi(0);
-	r - print_last_digit(-1024);
-	_putchar('0' + r);
-	_putchar('\n');
-	retuen (0);
+	int last;
+
+	last = n % 10;
+	if (last < 0)
+	{
+	last = last * -1;
+	}
+	_putchar(last + '0');
+	return (last);
